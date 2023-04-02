@@ -32,13 +32,13 @@ with col1:
     area_worst = st.text_input('Area Worst')
         
 with col2:
-    concavity_worst = st.text_input('Concavity Worst')
+    concavepoints_mean = st.text_input('Concave Points Mean')
     
 with col3:
-    area_se = st.text_input('Area SE')
+    concavity_worst = st.text_input('Concavity Worst')
     
 with col4:
-    concavepoints_mean = st.text_input('Concave Points Mean')
+    area_se = st.text_input('Area SE')
     
 with col5:
     perimeter_se = st.text_input('Perimeter SE')
