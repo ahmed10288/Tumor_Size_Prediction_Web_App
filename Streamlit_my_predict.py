@@ -5,7 +5,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # Load the saved StandardScaler object
-scaler = pickle.load(open('python/scaler.sav', 'rb'))
+scaler = pickle.load(open('scaler.sav', 'rb'))
 
 # Load the saved XGBRegressor model
 model = pickle.load(open('trained_model.sav', 'rb'))
