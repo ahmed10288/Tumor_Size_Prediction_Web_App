@@ -4,10 +4,10 @@ from sklearn.preprocessing import StandardScaler
 import streamlit as st
 
 # Load the saved StandardScaler object
-scaler = pickle.load(open('C:/Users/ahmed/OneDrive/Master/Máster - IMF/TMF/python/scaler.sav', 'rb'))
+scaler = pickle.load(open('scaler.sav', 'rb'))
 
 # Load the saved XGBRegressor model
-model = pickle.load(open('C:/Users/ahmed/OneDrive/Master/Máster - IMF/TMF/python/trained_model.sav', 'rb'))
+model = pickle.load(open('trained_model.sav', 'rb'))
 
 def predict(area_worst, concavepoints_mean, concavity_worst, area_se, perimeter_se):
     # Transform the input values using the StandardScaler
