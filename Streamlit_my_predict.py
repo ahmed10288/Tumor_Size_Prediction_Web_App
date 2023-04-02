@@ -29,19 +29,19 @@ st.write('Enter the following values to predict the Tumor Size:')
 col1, col2, col3, col4, col5 = st.columns(5)
     
 with col1:
-    area_worst = st.text_input('Enter the Area Worst')
+    area_worst = st.text_input('Area Worst')
         
 with col2:
-    concavity_worst = st.text_input('Enter the Concavity Worst')
+    concavity_worst = st.text_input('Concavity Worst')
     
 with col3:
-    area_se = st.text_input('Enter the Area SE')
+    area_se = st.text_input('Area SE')
     
 with col4:
-    concavepoints_mean = st.text_input('Enter the Concave Points Mean')
+    concavepoints_mean = st.text_input('Concave Points Mean')
     
 with col5:
-    perimeter_se = st.text_input('Enter Perimeter SE')
+    perimeter_se = st.text_input('Perimeter SE')
     
 # code for Prediction
 tumor_size = ''
