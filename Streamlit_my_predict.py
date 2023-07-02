@@ -26,7 +26,7 @@ selected_model= model
 # Sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('MONALI®', ['Tumor Size Prediction'], icons= ['mdi-Ribbon'], default_index=0)
+    selected = option_menu('MONALI®', ['Tumor Size Prediction'], default_index=0)
     
 if (selected == 'Tumor Size Prediction'):
     
