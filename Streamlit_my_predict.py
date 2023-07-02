@@ -59,3 +59,16 @@ if (selected == 'Tumor Size Prediction'):
     if st.button('Predict'):
             tumor_size = predict(area_worst, concavepoints_mean, concavity_worst, area_se, perimeter_se)
             st.success(f'The predicted Tumor Size is {tumor_size}')
+
+def main():
+    # Add the refresh button
+    refresh_button = st.button('', key='refresh')
+    refresh_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">' \
+                   '<path fill-rule="evenodd" d="M8 2a6 6 0 1 0 6 6H9.5a.5.5 0 0 1-.5-.5V6a.5.5 0 0 0-1 0v3.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 .5-.5h6zm4.354 1.646a.5.5 0 0 0-.708-.708L10.5 4.793V2.5a.5.5 0 0 0-1 0v3.793a.5.5 0 0 0 .146.354l2.147 2.146a.5.5 0 0 0 .708-.708L11.207 6.5H14.5a.5.5 0 0 0 0-1h-3.793l1.647-1.646z"/>' \
+                   '</svg>'
+    refresh_button.markdown(refresh_icon, unsafe_allow_html=True)
+
+    # Add your other Streamlit elements here
+
+if __name__ == '__main__':
+    main()
