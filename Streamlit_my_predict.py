@@ -26,12 +26,12 @@ selected_model= model
 # Sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('MONALI ®', ['Tumor Size Prediction'],default_index=0)
+    selected = option_menu('MONALI®', ['Tumor Size Prediction'],default_index=0)
     
 if (selected == 'Tumor Size Prediction'):
     
     # page title
-    st.title('MONALI ®: AI-Based Tumor Size Prediction')
+    st.title('MONALI®: AI-Based Tumor Size Prediction')
     st.write('Enter the following values to predict the Tumor Size:')
        
     # getting the input data from the user
